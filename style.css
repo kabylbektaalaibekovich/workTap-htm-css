@@ -7,17 +7,50 @@
     font-family: Montserrat;
 }
 .container{
-    width: 80%;
+    width:100%;
     margin: 0 auto;
+    box-sizing: border-box;
+
+
+}
+.btn-1 {
+animation: btn-1 4s infinite;
 
 }
 .btn-1:hover{
     background: var(--green, #272e2b);
 color: var(--white, #F6FAFD);
-
+}
+@keyframes btn-1 {
+    0% {
+        transform: rotate(120deg);
+    }
+    25% {
+        transform: rotate(-200deg);
+    }
+    50% {
+        transform: translateX(-1300px);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 .btn-2:hover{
     background: var(--green, #272e2b);
+}
+.btn-2 {
+    animation: btn-2 2s infinite;
+}
+@keyframes btn-2 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: translatex(200px);
+    }
+    100% {
+        transform: scale(1.2);
+    }
 }
 #work-tap{
     padding: 20px 0;
@@ -25,9 +58,7 @@ color: var(--white, #F6FAFD);
 a{
     text-decoration:none;
 }
-nav{
-    margin-right: 240px;
-}
+
 nav a{
     color: #000;
 font-family: Montserrat;
@@ -67,7 +98,24 @@ font-family: Montserrat;
 font-size: 36px;
 font-weight: 700;
 letter-spacing: 1.8px;
+background: linear-gradient(  
+    to right, rgb(246, 15, 7),
+    #fff 35%, #1bc171);
+    background-size: 400% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 4s linear infinite;}
+    @keyframes gradient {
+    0% {background-position: 0% 75%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 70%; }
+             
+
 }
+
+     
+
+
 span{
     color: var(--green, #1DBF73);
 font-family: Montserrat;
@@ -193,7 +241,7 @@ border: 1px solid var(--light-gray, #F2F0FE);
 }
 .work{
     display: flex;
-gap: 50px;
+gap: 60px;
 justify-content: space-around;
 }
 .internet-card h3{
@@ -534,3 +582,38 @@ padding: 30px 0;
 .h4 h4{
     margin: 30px 500px;
 }
+
+
+
+
+
+
+
+/* ЕРУ УТВ  */
+
+
+ .card1-block{animation: anim infinite 5s ;}
+@keyframes anim{
+    0% {transform:  translateX(-50%);}
+  50%  {transform:  translateX(20%);}
+   100% {transform:  translateX(0%);}
+} 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
